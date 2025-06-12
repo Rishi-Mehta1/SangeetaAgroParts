@@ -36,21 +36,16 @@ const About = () => {
 
   const team = [
     {
-      name: 'Sangeeta Sharma',
-      role: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b1dd?w=300&h=300&fit=crop',
-      description: 'With over 20 years in agriculture, Sangeeta founded the company to bridge the gap between farmers and quality equipment.'
+      name: 'Chandulal Mehta',
+      role: 'Founder',
+      description: 'Founded the company to bridge the gap between farmers and quality equipment.'
     },
     {
-      name: 'Rajesh Kumar',
-      role: 'Technical Director',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop',
-      description: 'Agricultural engineer with expertise in modern farming technologies and equipment maintenance.'
+      name: 'Dharmesh Mehta',
+      description: 'Dedicated to providing quality agricultural equipment and excellent customer service.'
     },
     {
-      name: 'Priya Patel',
-      role: 'Operations Manager',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop',
+      name: 'Paresh Mehta',
       description: 'Ensures smooth operations and timely delivery of products to farmers across the region.'
     }
   ];
@@ -166,14 +161,11 @@ const About = () => {
             {team.map((member, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  />
-                  <h3 className="text-lg font-semibold text-foreground mb-1">{member.name}</h3>
-                  <Badge variant="secondary" className="mb-3">{member.role}</Badge>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{member.description}</p>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{member.name}</h3>
+                  {member.role && (
+                    <Badge variant="secondary" className="mb-4">{member.role}</Badge>
+                  )}
+                  <p className="text-muted-foreground">{member.description}</p>
                 </CardContent>
               </Card>
             ))}

@@ -163,14 +163,14 @@ const Products = () => {
                     )}
                   </div>
                 </CardContent>
-                <CardFooter className="p-4 pt-0 space-y-2">
-                  <Link to={`/product/${product.id}`} className="w-full">
+                <CardFooter className="flex flex-row gap-2 p-6 pt-0">
+                  <Link to={`/product/${product.id}`} className="flex-1">
                     <Button variant="outline" className="w-full">
                       View Details
                     </Button>
                   </Link>
                   <Button
-                    className="w-full agricultural-button"
+                    className="flex-1 agricultural-button"
                     onClick={() => addToCart(product)}
                     disabled={!product.inStock}
                   >

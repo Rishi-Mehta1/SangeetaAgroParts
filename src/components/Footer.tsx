@@ -73,15 +73,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+91 98765 43210</span>
+                <span>+91 9824182105</span>
+              </li>
+              <li className="flex items-center space-x-2 text-muted-foreground">
+                <Phone className="h-4 w-4" />
+                <span>+91 9879758330</span>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@sangeetaagroparts.com</span>
+                <span>sangeetaagroparts@gmail.com</span>
               </li>
               <li className="flex items-start space-x-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>123 Agriculture Hub, Farm District, Agricultural Zone 560001</span>
+                <span>A-350, Kabirpura khatriwad, Bharuch</span>
               </li>
             </ul>
           </div>

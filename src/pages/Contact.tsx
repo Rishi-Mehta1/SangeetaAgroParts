@@ -52,25 +52,25 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: 'Phone',
-      details: ['+91 98765 43210', '+91 87654 32109'],
+      details: ['+91 9824182105', '+91 9879758330'],
       description: 'Mon-Sat 9:00 AM - 6:00 PM'
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: 'Email',
-      details: ['info@sangeetaagroparts.com', 'support@sangeetaagroparts.com'],
+      details: ['sangeetaagroparts@gmail.com'],
       description: 'We respond within 24 hours'
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: 'Address',
-      details: ['123 Agriculture Hub', 'Farm District, Agricultural Zone 560001'],
+      details: ['A-350, Kabirpura khatriwad', 'Bharuch'],
       description: 'Visit our showroom'
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,
       title: 'Business Hours',
-      details: ['Monday - Saturday: 9:00 AM - 6:00 PM', 'Sunday: 10:00 AM - 4:00 PM'],
+      details: ['Monday - Saturday: 9:00 AM - 6:00 PM', 'Sunday: Closed'],
       description: 'Emergency support available'
     }
   ];
@@ -208,31 +208,44 @@ const Contact = () => {
               </Card>
             ))}
 
-            {/* Map Placeholder */}
-            <Card>
+            {/* Map */}
+            <Card className="mt-8">
               <CardHeader>
                 <CardTitle>Visit Our Location</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="bg-muted rounded-lg h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-                    <p className="text-muted-foreground">
-                      Interactive map would be integrated here
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      123 Agriculture Hub, Farm District
-                    </p>
-                  </div>
+                <div className="relative">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.60543729258892!2d72.99653015251263!3d21.69861657662058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQxJzU1LjAiTiA3MsKwNTknNTcuNSJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin"
+                    width="100%"
+                    height="400"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg"
+                  ></iframe>
+                  <div 
+                    className="absolute inset-0 cursor-pointer bg-transparent"
+                    onClick={() => window.open(`https://www.google.com/maps?q=${21.69861657662058},${72.99653015251263}`, '_blank')}
+                    title="Click to open in Google Maps"
+                  />
                 </div>
                 <div className="mt-4 space-y-2">
                   <p className="text-sm text-muted-foreground">
-                    <strong>Directions:</strong> Located in the heart of the agricultural district, 
-                    easily accessible by public transport and with ample parking available.
+                    <strong>Directions:</strong> Located in Kabirpura khatriwad, easily accessible from main road.
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    <strong>Landmarks:</strong> Near Central Market, opposite Agricultural Bank
+                    <strong>Landmarks:</strong> Near Kabirpura area, Bharuch
                   </p>
+                  <Button 
+                    variant="outline" 
+                    className="mt-2 w-full"
+                    onClick={() => window.open(`https://www.google.com/maps?q=${21.69861657662058},${72.99653015251263}`, '_blank')}
+                  >
+                    <MapPin className="mr-2 h-4 w-4" />
+                    Open in Google Maps
+                  </Button>
                 </div>
               </CardContent>
             </Card>
