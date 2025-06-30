@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+# Sangeeta Agro Parts - E-commerce Platform 🌾
 
-## Project info
+A modern, responsive e-commerce web application for agricultural equipment and parts, built with React, TypeScript, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/57b97afe-befc-4dd4-a2f7-d2ff0078b9e7
+##  Features
 
-## How can I edit this code?
+### Core Functionality
+- **Product Catalog**: Browse agricultural products with category filtering and search
+- **Shopping Cart**: Add, remove, and manage items with quantity controls
+- **User Authentication**: Secure login/register system with Firebase
+- **Product Details**: Comprehensive product information with image galleries
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 
-There are several ways of editing your application.
+### Pages
+- **Home**: Hero section with featured products and company highlights
+- **Products**: Filterable product grid with search and sorting options
+- **Product Detail**: Individual product pages with full specifications
+- **Shopping Cart**: Complete cart management with checkout preparation
+- **About**: Company information and mission statement
+- **Contact**: Contact form with business information
+- **Authentication**: Login and registration pages
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/57b97afe-befc-4dd4-a2f7-d2ff0078b9e7) and start prompting.
+- **Frontend Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom agricultural theme
+- **UI Components**: shadcn/ui component library
+- **Authentication**: Firebase Auth with Google Sign-in
+- **Routing**: React Router v6
+- **State Management**: React Context API
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Package Manager**: npm
 
-Changes made via Lovable will be committed automatically to this repo.
+## Design System
 
-**Use your preferred IDE**
+- **Color Scheme**: Agricultural green theme with earthy accents
+- **Components**: Consistent UI components using shadcn/ui
+- **Responsive**: Mobile-first design approach
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/57b97afe-befc-4dd4-a2f7-d2ff0078b9e7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
